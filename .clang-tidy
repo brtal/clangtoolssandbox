@@ -1,1 +1,1 @@
-Checks: '*,-modernize-use-trailing-return-type'
+Checks: '*,-cppcoreguidelines-avoid-magic-numbers,-modernize-use-trailing-return-type,-readability-magic-numbers'

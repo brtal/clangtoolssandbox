@@ -7,8 +7,7 @@ void TakeVector1(std::vector<int> vec)
     // expected: probably nothing
     // actual  : (nothing)
 
-    static constexpr int magicvalue = 10;
-    vec.push_back(magicvalue);
+    vec.push_back(10);
 
     for (auto v : vec)
     {
@@ -25,9 +24,7 @@ void TakeVector2(std::vector<int> vec)
     //           [performance-unnecessary-value-param]
 
     auto vec2 = vec;
-
-    static constexpr int magicvalue = 10;
-    vec2.push_back(magicvalue);
+    vec2.push_back(10);
 
     for (auto v : vec2)
     {

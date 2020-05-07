@@ -11,4 +11,6 @@ set(CMAKE_CXX_CLANG_TIDY clang-tidy)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Wextra")
+
 add_executable(clangtoolstest src/main.cpp src/tidy_copies.cpp)
